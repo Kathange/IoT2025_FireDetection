@@ -2,19 +2,37 @@
 
 # 火災偵測與聯防系統
 
-使用工具與元件：\
-硬體\
-麵包版、esp32開發版(nodemcu32s)、MQ-2煙霧感測器、KY-026火焰感測器、DS18B20溫度感測器、Buzzer\
-軟體\
-ArduinoIDE、Firebase、Blynk、Flask
+(之後放.ino檔、blynk設定教學、email轉寄設定、firebase設定教學)\
 
-(之後放.ino檔、blynk設定教學、接線的圖、email轉寄設定、firebase設定教學)\
-(寫完之後要放圖)
+
+
+## 硬體接線
+需要元件：麵包版、esp32開發版(nodemcu32s)、MQ-2煙霧感測器、KY-026火焰感測器、DS18B20溫度感測器、Buzzer
+
+接線圖如下
+
+<img src="/img/Wiring Diagram.png" />
+
+
+
+## Arduino IDE 設定
+需要下載的套件：
+
+Sketch -> Incluing Library -> Manage Libraries
+```
+Arduino IDE, version 0.2.0, by Arduino
+Blynk, version1.3.2, by Volodymyr Shymanskyy
+BlynkNcpDriver, version0.6.3, by Volodymyr Shymanskyy
+DallasTemperature, version 4.0.3, by Miles Burton
+Firebase, version 1.0.1, by Rupak Poddar
+Firebase ESP32 Client, version 4.4.17, by Mobizt
+OneWire, version 2.3.8, by Jim Studt, Tom Pollard, Robin James, ...
+```
 
 
 
 ## Flask 專案設定
-在 fire_analysis 資料夾底下，要執行 app.py，tree如下。不過在執行之前，要先把 Firebase 的許可證拿下來。
+在 fire_analysis 資料夾底下，要執行 app.py，tree 如下。不過在執行之前，要先把 Firebase 的許可證拿下來。
 ```
 fire_analysis
 │   app.py
@@ -28,11 +46,11 @@ fire_analysis
 ```
 進入 firebase，點擊你的專案 (我的叫 IoT2025Fire)，左側的專案導覽有一個齒輪，點擊之後點專案設定
 
-<img src="flask_1.png" />
+<img src="/img/flask_1.png" />
 
 選擇服務帳戶後會看到 Firebase Admin SDK，在最下面有一個"產生新的私密金鑰"，點擊就會生成一個 .json，接著把那個放到跟 app.py 同個目錄底下就可以了。
 
-<img src="flask_2.png" />
+<img src="/img/flask_2.png" />
 
 
 
@@ -45,7 +63,7 @@ ngrok config add-authtoken YOUR_AUTHTOKEN
 ```
 YOUR_AUTHTOKEN 記得要換成自己的 token，它像一個亂數。
 
-接著輸入這行就可以把 Flask 的網頁變成公開網址，
+接著輸入這行就可以把 Flask 的網頁變成公開網址
 ```
 ngrok http http://localhost:5000
 ```
@@ -53,7 +71,7 @@ ngrok http http://localhost:5000
 
 
 ## Email 轉寄設定
-
+進入 email 網頁中，
 
 
 

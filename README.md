@@ -8,4 +8,5 @@
 軟體\
 ArduinoIDE、Firebase、Blynk、Flask
 
+(之後放.ino檔、flask專案、blynk設定教學、ngrok設定教學、接線的圖、email轉寄設定)
 

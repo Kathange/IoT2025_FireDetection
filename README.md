@@ -7,7 +7,18 @@
 
 
 ## 硬體接線
-需要元件：麵包版、esp32開發版(nodemcu32s)、MQ-2煙霧感測器、KY-026火焰感測器、DS18B20溫度感測器、Buzzer
+需要元件：麵包板、esp32開發版(nodemcu32s)、MQ-2煙霧感測器、KY-026火焰感測器、DS18B20溫度感測器、Buzzer
+
+<img src="/img/components_breadboard.jpg" />\
+<img src="/img/components_mq2.jpg" />\
+<img src="/img/components_ky026.jpg" />\
+<img src="/img/components_ds18b20.jpg" />\
+<img src="/img/components_buzzer.jpg" />\
+<img src="/img/components_esp32.jpg" />
+
+esp32 的規格如下
+
+<img src="/img/esp32_pinout.jpg" />
 
 接線圖如下
 
@@ -28,6 +39,9 @@ Sketch -> Incluing Library -> Manage Libraries
 6. Firebase ESP32 Client, version 4.4.17, by Mobizt
 7. OneWire, version 2.3.8, by Jim Studt, Tom Pollard, Robin James, ...
 ```
+
+程式設定：
+
 
 
 

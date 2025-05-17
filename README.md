@@ -2,7 +2,7 @@
 
 # 火災偵測與聯防系統
 
-(之後放.ino檔、blynk設定教學、email轉寄設定、firebase設定教學)\
+(之後放.ino檔、blynk設定教學、email轉寄設定、firebase設定教學)
 
 
 
@@ -20,13 +20,13 @@
 
 Sketch -> Incluing Library -> Manage Libraries
 ```
-Arduino IDE, version 0.2.0, by Arduino
-Blynk, version1.3.2, by Volodymyr Shymanskyy
-BlynkNcpDriver, version0.6.3, by Volodymyr Shymanskyy
-DallasTemperature, version 4.0.3, by Miles Burton
-Firebase, version 1.0.1, by Rupak Poddar
-Firebase ESP32 Client, version 4.4.17, by Mobizt
-OneWire, version 2.3.8, by Jim Studt, Tom Pollard, Robin James, ...
+1. Arduino IDE, version 0.2.0, by Arduino
+2. Blynk, version1.3.2, by Volodymyr Shymanskyy
+3. BlynkNcpDriver, version0.6.3, by Volodymyr Shymanskyy
+4. DallasTemperature, version 4.0.3, by Miles Burton
+5. Firebase, version 1.0.1, by Rupak Poddar
+6. Firebase ESP32 Client, version 4.4.17, by Mobizt
+7. OneWire, version 2.3.8, by Jim Studt, Tom Pollard, Robin James, ...
 ```
 
 
@@ -71,7 +71,17 @@ ngrok http http://localhost:5000
 
 
 ## Email 轉寄設定
-進入 email 網頁中，
+進入 email 網頁中，在右邊有一個設定的齒輪，點擊 "查看所有設定"
+
+<img src="/img/email_1.png" />
+
+進入 "轉寄和 POP/IMAP"，點擊 "新增轉寄地址"，在跳出的視窗中填入你要轉寄的地址後，會進行手機驗證，驗證過了之後，就成功這個地址加入轉寄列表中了。
+
+<img src="/img/email_2.png" />
+
+接著看你是否要設定篩選器，我有，有的話大概會長這樣
+
+<img src="/img/email_3.png" />
 
 
 
